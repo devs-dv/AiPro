@@ -3,11 +3,19 @@ import { CgProfile } from "react-icons/cg";
 import { FaBalanceScaleLeft } from "react-icons/fa";
 import { PiBankBold } from "react-icons/pi";
 import { LuBookOpen } from "react-icons/lu";
+import { LuUsers2 } from "react-icons/lu";
+
 
 const Component2 = () => {
   return (
     <div className="bg-[#EFEFEF] min-h-screen text-black font-sans">
-      <div className="max-w-7xl mx-auto px-4 py-12">
+      <div className="flex justify-center items-center py-6">
+        <div className="inline-flex justify-center items-center text-md text-purple-500 border border-gray-300 p-1 rounded-3xl">
+          <LuUsers2 className="mr-2" />
+          Users
+        </div>
+      </div>
+      <div className="max-w-7xl mx-auto px-4 ">
         <h1 className="text-4xl font-bold text-center mb-6">
           Who is AI Lawyer for?
         </h1>
