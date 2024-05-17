@@ -116,6 +116,11 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="fixed bottom-4 left-4 z-50">
+        <button className="bg-white text-black font-semibold py-2 px-4 rounded-lg shadow-md">
+          US EN
+        </button>
+      </div>
 
       {/* <div className="min-h-screen bg=[#2C2D31] text-white flex flex-col items-center">
         <header className="w-full flex justify-between p-4 bg-gray-800">
