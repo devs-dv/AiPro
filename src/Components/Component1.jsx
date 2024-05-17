@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import { FaBars } from "react-icons/fa6";
 
 const Component1 = () => {
   return (
@@ -6,8 +7,8 @@ const Component1 = () => {
       <div className="bg-[#EFEFEF] flex flex-col">
         {/* <div className="bg-gray-100 dark:bg-gray-800 py-20"> */}
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="flex items-center space-x-2">
+          <div className="flex flex-row items-center justify-between mt-5">
+            <div className="flex items-center justify-center space-x-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8 text-purple-300"
@@ -24,46 +25,53 @@ const Component1 = () => {
               </svg>
               <span className="font-bold text-xl">ailawyer</span>
             </div>
-            <div className="space-x-4 hidden md:flex">
+            <FaBars className="md:hidden w-6 h-6"/>
+            <div class="space-x-4 md:flex max-md:hidden">
               <a
                 href="#"
-                className="hover:text-gray-600 dark:hover:text-gray-400"
+                class="relative group hover:text-gray-600 dark:hover:text-gray-400"
               >
                 FAQ
+                <span class="block absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
               </a>
               <a
                 href="#"
-                className="hover:text-gray-600 dark:hover:text-gray-400"
+                class="relative group hover:text-gray-600 dark:hover:text-gray-400"
               >
                 Affiliate
+                <span class="block absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
               </a>
               <a
                 href="#"
-                className="hover:text-gray-600 dark:hover:text-gray-400"
+                class="relative group hover:text-gray-600 dark:hover:text-gray-400"
               >
                 Pricing
+                <span class="block absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
               </a>
               <a
                 href="#"
-                className="hover:text-gray-600 dark:hover:text-gray-400"
+                class="relative group hover:text-gray-600 dark:hover:text-gray-400"
               >
                 Blog
+                <span class="block absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
               </a>
               <a
                 href="#"
-                className="hover:text-gray-600 dark:hover:text-gray-400"
+                class="relative group hover:text-gray-600 dark:hover:text-gray-400"
               >
                 Contact
+                <span class="block absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
               </a>
             </div>
-            <button className="bg-yellow-300 text-black font-bold py-4 px-8 rounded-full shadow-lg hover:bg-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 transition duration-300">
+
+            <button className="max-md:hidden bg-yellow-300 text-black font-semibold py-3 px-6 rounded-2xl shadow-lg hover:bg-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 transition duration-300">
               Try for Free
             </button>
           </div>
           <div>
-            <div className="flex justify-center mt-10">
-              <button className="bg-gray-700 text-white px-6 py-2 rounded-full flex items-center space-x-2">
-                <span className="bg-green-500 text-white font-bold px-2 py-1 rounded-full">
+            <div className="flex justify-center mt-10 ">
+              <button className="bg-gray-700 text-white px-1 py-1 rounded-full flex items-center space-x-2">
+                <span className="bg-green-500 text-white font-bold px-2 rounded-full">
                   New
                 </span>
                 <span>Become a Distributor</span>
@@ -76,25 +84,31 @@ const Component1 = () => {
               </button>
             </div>
             <header className="text-center mt-10">
-              <h1 className="text-6xl font-bold">
+              <h1 className="text-6xl font-bold max-w-3xl mx-auto max-md:text-4xl">
                 AI Lawyer: your personal legal AI assistant
               </h1>
             </header>
           </div>
           {/* </div> */}
-          <div className="w-full px-4 py-12">
+          <div className="w-full px-4 py-12 max-w-xl mx-auto">
             <div className="max-w-screen-xl mx-auto flex flex-col items-center">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
-                <div>
-                  <h2 className="text-xl font-semibold mb-4">for Consumers:</h2>
-                  <p>
+              <div className="flex flex-row max-md:flex-col gap-8 md:text-left ">
+                <div className="">
+                  <h2 className="text-xl font-semibold text-center mb-4">
+                    for <span className=" text-indigo-500">Consumers:</span>
+                  </h2>
+                  <p className=" text-center">
                     Say goodbye to expensive legal consultation, long waits for
                     appointments, and confusing legal texts.
                   </p>
                 </div>
+                <div className=" bg-black w-1 max-md:hidden"></div>
+                <div className=" bg-black h-[0.5px] md:hidden"></div>
                 <div>
-                  <h2 className="text-xl font-semibold mb-4">for Lawyers:</h2>
-                  <p>
+                  <h2 className="text-xl font-semibold mb-4 text-center">
+                    for <span className=" text-purple-500">Lawyers:</span>
+                  </h2>
+                  <p className=" text-center">
                     Say goodbye to routine tasks. AI Lawyer automate your legal
                     research and paperwork, granting you more free time.
                   </p>
@@ -106,24 +120,24 @@ const Component1 = () => {
                 </button>
               </div>
               <div className="flex flex-col items-center mt-4">
-                <div className="flex -space-x-2 overflow-hidden">
+                <div className="flex -space-x-2">
                   <img
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-black hover:-translate-y-2"
+                    className="inline-block h-10 w-10 rounded-full ring-2 ring-black hover:-translate-y-2 duration-300"
                     src="https://framerusercontent.com/images/qu3p1CVTcA51hxcrHdp0kWGBv8.png"
                     alt="User 1"
                   />
                   <img
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-black hover:-translate-y-2"
+                    className="inline-block h-10 w-10 rounded-full ring-2 ring-black hover:-translate-y-2 duration-300"
                     src="https://framerusercontent.com/images/2mXcwauLEfvaNQkLjPpPYVVtos.png"
                     alt="User 2"
                   />
                   <img
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-black hover:-translate-y-2"
+                    className="inline-block h-10 w-10 rounded-full ring-2 ring-black hover:-translate-y-2 duration-300"
                     src="https://framerusercontent.com/images/TYo9warB47QIM9Qv6K0p163790.png"
                     alt="User 3"
                   />
                   <img
-                    className="inline-block h-10 w-10 rounded-full ring-2 ring-black hover:-translate-y-2"
+                    className="inline-block h-10 w-10 rounded-full ring-2 ring-black hover:-translate-y-2 duration-300"
                     src="https://framerusercontent.com/images/YLdNx7Ji8qI3mK9gRdUlSiNUbHc.png"
                     alt="User 4"
                   />
@@ -144,6 +158,6 @@ const Component1 = () => {
       </div>
     </>
   );
-}
+};
 
-export default Component1
+export default Component1;
