@@ -42,7 +42,7 @@ const Component1 = () => {
           Try for Free
         </button>
       </nav>
-      <div className=" inset-x-0  flex justify-center items-center h-16 bg-white dark:bg-zinc-800">
+      <div className=" inset-x-0  flex justify-center items-center h- bg-white dark:bg-zinc-800">
         <button className="bg-zinc-700 text-white px-6 py-2 rounded-full flex items-center space-x-2">
           <span className="bg-green-500 text-white font-bold px-2 py-1 rounded-full">
             New
@@ -50,10 +50,11 @@ const Component1 = () => {
           <span>Become a Distributor</span>
           {/* <img alt="arrow" src="https://placehold.co/20" /> */}
           <img
+            className="small-svg"
             aria-hidden="true"
             alt="arrow"
-            src="https://placehold.co/20x20/000000/FFFFFF?text=%E2%86%92"
-            class="filter invert"
+            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20256%22%20focusable%3D%22false%22%20color%3D%22var(--token-d3965f8d-ed09-4f81-a06d-765b94d820c1%2C%20rgb(0%2C%20200%2C%2044))%22%20style%3D%22user-select%3A%20none%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20display%3A%20inline-block%3B%20fill%3A%20var(--token-d3965f8d-ed09-4f81-a06d-765b94d820c1%2C%20rgb(0%2C%20200%2C%2044))%3B%20color%3A%20var(--token-d3965f8d-ed09-4f81-a06d-765b94d820c1%2C%20rgb(0%2C%20200%2C%2044))%3B%20flex-shrink%3A%200%3B%22%3E%3Cg%20color%3D%22var(--token-d3965f8d-ed09-4f81-a06d-765b94d820c1%2C%20rgb(0%2C%20200%2C%2044))%22%20weight%3D%22bold%22%3E%3Cpath%20d%3D%22M224.49%2C136.49l-72%2C72a12%2C12%2C0%2C0%2C1-17-17L187%2C140H40a12%2C12%2C0%2C0%2C1%2C0-24H187L135.51%2C64.48a12%2C12%2C0%2C0%2C1%2C17-17l72%2C72A12%2C12%2C0%2C0%2C1%2C224.49%2C136.49Z%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+            // class="filter invert"
           />{" "}
         </button>
       </div>
