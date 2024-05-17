@@ -8,7 +8,7 @@ import { LuUsers2 } from "react-icons/lu";
 
 const Component2 = () => {
   return (
-    <div className="bg-[#EFEFEF] min-h-screen text-black font-sans">
+    <div className="bg-[#EFEFEF] min-h-screen text-black font-sans py-20">
       <div className="flex justify-center items-center py-6">
         <div className="inline-flex justify-center items-center text-md text-purple-500 border border-gray-300 p-1 rounded-3xl">
           <LuUsers2 className="mr-2" />
