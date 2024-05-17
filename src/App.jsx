@@ -84,7 +84,7 @@ function App() {
       {/* this is Your Component . satya  */}
       <Component1/>
       <Component2/>
-      <Component3/>
+      
     </>
   );
 }
