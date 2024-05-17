@@ -42,6 +42,22 @@ const Component1 = () => {
           Try for Free
         </button>
       </nav>
+      <div className=" inset-x-0  flex justify-center items-center h-16 bg-white dark:bg-zinc-800">
+        <button className="bg-zinc-700 text-white px-6 py-2 rounded-full flex items-center space-x-2">
+          <span className="bg-green-500 text-white font-bold px-2 py-1 rounded-full">
+            New
+          </span>
+          <span>Become a Distributor</span>
+          {/* <img alt="arrow" src="https://placehold.co/20" /> */}
+          <img
+            aria-hidden="true"
+            alt="arrow"
+            src="https://placehold.co/20x20/000000/FFFFFF?text=%E2%86%92"
+            class="filter invert"
+          />{" "}
+        </button>
+      </div>
+
       <header className="text-center p-20">
         <h1 className="text-6xl font-bold">
           AI Lawyer: your personal legal AI assistant
