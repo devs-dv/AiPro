@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import { FaBars } from "react-icons/fa6";
 
 const Component1 = () => {
-
-
-
-  
   return (
     <>
-      <div className="bg-[#EFEFEF] flex flex-col">
-        {/* <div className="bg-gray-100 dark:bg-gray-800 py-20"> */}
-        <div className=" sticky inset-x-0 top-0 z-30  w-full max-w-screen-md  container mx-auto px-4 md:top-6 md:rounded-3xl lg:max-w-screen-lg ">
+      <div className="relative flex flex-col">
+        {/* Background Video */}
+
+        <div
+          className="sticky inset-x-0 top-0 z-30 w-full container mx-auto
+          md:rounded-3xl lg:max-w-screen-xl"
+        >
           <div className="flex flex-row items-center space-x-8 justify-between m-5">
             <div className="flex items-center ">
               <img
@@ -18,55 +18,63 @@ const Component1 = () => {
                 src="https://framerusercontent.com/images/LvzWXeOKQdmc9M0ZkQoDU3Z76s.svg"
                 alt="AI Lawyer Logo"
               />
-              <span className="font-\[#545454\] text-4xl">lawyer</span>
+              <span className="font-[#545454] text-4xl">lawyer</span>
             </div>
             <div className="space-y-48"> </div>
             <FaBars className="md:hidden w-6 h-6" />
-            <div class="space-x-14  md:flex max-md:hidden  w-auto container mx-auto px-4 md:top-6 md:rounded-3xl lg:max-w-screen-lg">
+            <div className="space-x-14 md:flex max-md:hidden w-auto container mx-auto px-4 md:top-6 md:rounded-3xl lg:max-w-screen-lg">
               <a
                 href="#"
-                class="relative group hover:text-gray-600 dark:hover:text-gray-400"
+                className="relative group text-gray-600 dark:hover:text-gray-400"
               >
                 FAQ
-                <span class="block absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
+                <span className="block absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
               </a>
               <a
                 href="#"
-                class="relative group hover:text-gray-600 dark:hover:text-gray-400"
+                className="relative group text-gray-600 dark:hover:text-gray-400"
               >
                 Affiliate
-                <span class="block absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
+                <span className="block absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
               </a>
               <a
                 href="#"
-                class="relative group hover:text-gray-600 dark:hover:text-gray-400"
+                className="relative group text-gray-600 dark:hover:text-gray-400"
               >
                 Pricing
-                <span class="block absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
+                <span className="block absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
               </a>
               <a
                 href="#"
-                class="relative group hover:text-gray-600 dark:hover:text-gray-400"
+                className="relative group text-gray-600 dark:hover:text-gray-400"
               >
                 Blog
-                <span class="block absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
+                <span className="block absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
               </a>
               <a
                 href="#"
-                class="relative group hover:text-gray-600 dark:hover:text-gray-400"
+                className="relative group text-gray-600 dark:hover:text-gray-400"
               >
                 Contact
-                <span class="block absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
+                <span className="block absolute left-0 bottom-0 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
               </a>
             </div>
 
-            <button className="max-md:hidden space-y-44 bg-yellow-300 text-black font-semibold py-3 px-6 rounded-2xl shadow-lg hover:bg-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 transition duration-300">
+            <button className="max-md:hidden bg-yellow-300 text-black font-semibold py-3 px-6 rounded-2xl shadow-lg hover:bg-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 transition duration-300">
               Try for Free
             </button>
           </div>
         </div>
-        <div className=" md:top-10 md:rounded-3xl px-5 py-5 mx-5 my-5">
-          <div className="flex justify-center mt-10 ">
+
+        <div className="md:top-10 md:rounded-3xl px-5 py-5 mx-5 my-5">
+          <div className="flex justify-center mt-10">
+            <video
+              className="absolute inset-0 w-full h-full object-cover  opacity-5 m-20 rounded-3xl mix-blend-overlay"
+              src="videoplayback.mp4" // Replace with your video path
+              autoPlay
+              muted
+              loop
+            />
             <button className="bg-gray-700 text-white px-1 py-1 rounded-full flex items-center space-x-2">
               <span className="bg-green-500 text-white font-bold px-2 rounded-full">
                 New
@@ -83,31 +91,31 @@ const Component1 = () => {
           <div className="">
             <header className="text-center mt-10">
               <h1 className="text-6xl font-bold max-w-3xl mx-auto max-md:text-4xl">
-                AI Lawyer: your personal legal AI assistant
+                <span className="text-purple-500">AI Lawyer</span>: your
+                personal legal AI assistant
               </h1>
             </header>
           </div>
-          {/* </div> */}
           <div className="w-full px-4 py-12 max-w-xl mx-auto">
             <div className="max-w-screen-xl mx-auto flex flex-col items-center">
-              <div className="flex flex-row max-md:flex-col gap-8 md:text-left ">
+              <div className="flex flex-row max-md:flex-col gap-8 md:text-left">
                 <div className="">
                   <h2 className="text-xl font-semibold text-center mb-4">
-                    for <span className=" text-indigo-500">Consumers:</span>
+                    for <span className="text-indigo-500">Consumers:</span>
                   </h2>
-                  <p className=" text-center">
+                  <p className="text-center">
                     Say goodbye to expensive legal consultation, long waits for
                     appointments, and confusing legal texts.
                   </p>
                 </div>
-                <div className=" bg-black w-1 max-md:hidden"></div>
-                <div className=" bg-black h-[0.5px] md:hidden"></div>
+                <div className="bg-black w-1 max-md:hidden"></div>
+                <div className="bg-black h-[0.5px] md:hidden"></div>
                 <div>
                   <h2 className="text-xl font-semibold mb-4 text-center">
-                    for <span className=" text-purple-500">Lawyers:</span>
+                    for <span className="text-purple-500">Lawyers:</span>
                   </h2>
-                  <p className=" text-center">
-                    Say goodbye to routine tasks. AI Lawyer automate your legal
+                  <p className="text-center">
+                    Say goodbye to routine tasks. AI Lawyer automates your legal
                     research and paperwork, granting you more free time.
                   </p>
                 </div>
