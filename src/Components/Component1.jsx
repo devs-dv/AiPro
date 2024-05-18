@@ -1,32 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaBars } from "react-icons/fa6";
 
 const Component1 = () => {
+
+
+
+  
   return (
     <>
       <div className="bg-[#EFEFEF] flex flex-col">
         {/* <div className="bg-gray-100 dark:bg-gray-800 py-20"> */}
-        <div className="container mx-auto px-4">
-          <div className="flex flex-row items-center justify-between mt-5">
-            <div className="flex items-center justify-center space-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 text-purple-300"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 4v16m8-8H4"
-                />
-              </svg>
-              <span className="font-bold text-xl">ailawyer</span>
+        <div className=" sticky inset-x-0 top-0 z-30  w-full max-w-screen-md  container mx-auto px-4 md:top-6 md:rounded-3xl lg:max-w-screen-lg ">
+          <div className="flex flex-row items-center space-x-8 justify-between m-5">
+            <div className="flex items-center ">
+              <img
+                className="h-10 flex-shrink-0"
+                src="https://framerusercontent.com/images/LvzWXeOKQdmc9M0ZkQoDU3Z76s.svg"
+                alt="AI Lawyer Logo"
+              />
+              <span className="font-\[#545454\] text-4xl">lawyer</span>
             </div>
-            <FaBars className="md:hidden w-6 h-6"/>
-            <div class="space-x-4 md:flex max-md:hidden">
+            <div className="space-y-48"> </div>
+            <FaBars className="md:hidden w-6 h-6" />
+            <div class="space-x-14  md:flex max-md:hidden  w-auto container mx-auto px-4 md:top-6 md:rounded-3xl lg:max-w-screen-lg">
               <a
                 href="#"
                 class="relative group hover:text-gray-600 dark:hover:text-gray-400"
@@ -64,25 +60,27 @@ const Component1 = () => {
               </a>
             </div>
 
-            <button className="max-md:hidden bg-yellow-300 text-black font-semibold py-3 px-6 rounded-2xl shadow-lg hover:bg-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 transition duration-300">
+            <button className="max-md:hidden space-y-44 bg-yellow-300 text-black font-semibold py-3 px-6 rounded-2xl shadow-lg hover:bg-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 transition duration-300">
               Try for Free
             </button>
           </div>
-          <div>
-            <div className="flex justify-center mt-10 ">
-              <button className="bg-gray-700 text-white px-1 py-1 rounded-full flex items-center space-x-2">
-                <span className="bg-green-500 text-white font-bold px-2 rounded-full">
-                  New
-                </span>
-                <span>Become a Distributor</span>
-                <img
-                  className="small-svg"
-                  aria-hidden="true"
-                  alt="arrow"
-                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20256%22%20focusable%3D%22false%22%20color%3D%22var(--token-d3965f8d-ed09-4f81-a06d-765b94d820c1%2C%20rgb(0%2C%20200%2C%2044))%22%20style%3D%22user-select%3A%20none%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20display%3A%20inline-block%3B%20fill%3A%20var(--token-d3965f8d-ed09-4f81-a06d-765b94d820c1%2C%20rgb(0%2C%20200%2C%2044))%3B%20color%3A%20var(--token-d3965f8d-ed09-4f81-a06d-765b94d820c1%2C%20rgb(0%2C%20200%2C%2044))%3B%20flex-shrink%3A%200%3B%22%3E%3Cg%20color%3D%22var(--token-d3965f8d-ed09-4f81-a06d-765b94d820c1%2C%20rgb(0%2C%20200%2C%2044))%22%20weight%3D%22bold%22%3E%3Cpath%20d%3D%22M224.49%2C136.49l-72%2C72a12%2C12%2C0%2C0%2C1-17-17L187%2C140H40a12%2C12%2C0%2C0%2C1%2C0-24H187L135.51%2C64.48a12%2C12%2C0%2C0%2C1%2C17-17l72%2C72A12%2C12%2C0%2C0%2C1%2C224.49%2C136.49Z%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                />
-              </button>
-            </div>
+        </div>
+        <div className=" md:top-10 md:rounded-3xl px-5 py-5 mx-5 my-5">
+          <div className="flex justify-center mt-10 ">
+            <button className="bg-gray-700 text-white px-1 py-1 rounded-full flex items-center space-x-2">
+              <span className="bg-green-500 text-white font-bold px-2 rounded-full">
+                New
+              </span>
+              <span>Become a Distributor</span>
+              <img
+                className="small-svg"
+                aria-hidden="true"
+                alt="arrow"
+                src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20256%22%20focusable%3D%22false%22%20color%3D%22var(--token-d3965f8d-ed09-4f81-a06d-765b94d820c1%2C%20rgb(0%2C%20200%2C%2044))%22%20style%3D%22user-select%3A%20none%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20display%3A%20inline-block%3B%20fill%3A%20var(--token-d3965f8d-ed09-4f81-a06d-765b94d820c1%2C%20rgb(0%2C%20200%2C%2044))%3B%20color%3A%20var(--token-d3965f8d-ed09-4f81-a06d-765b94d820c1%2C%20rgb(0%2C%20200%2C%2044))%3B%20flex-shrink%3A%200%3B%22%3E%3Cg%20color%3D%22var(--token-d3965f8d-ed09-4f81-a06d-765b94d820c1%2C%20rgb(0%2C%20200%2C%2044))%22%20weight%3D%22bold%22%3E%3Cpath%20d%3D%22M224.49%2C136.49l-72%2C72a12%2C12%2C0%2C0%2C1-17-17L187%2C140H40a12%2C12%2C0%2C0%2C1%2C0-24H187L135.51%2C64.48a12%2C12%2C0%2C0%2C1%2C17-17l72%2C72A12%2C12%2C0%2C0%2C1%2C224.49%2C136.49Z%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+              />
+            </button>
+          </div>
+          <div className="">
             <header className="text-center mt-10">
               <h1 className="text-6xl font-bold max-w-3xl mx-auto max-md:text-4xl">
                 AI Lawyer: your personal legal AI assistant
@@ -149,12 +147,12 @@ const Component1 = () => {
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="fixed bottom-4 left-4 z-50">
-          <button className="bg-white text-black font-semibold py-2 px-4 rounded-lg shadow-md">
-            US EN
-          </button>
-        </div>
+      <div className="fixed bottom-4 left-4 z-50">
+        <button className="bg-white text-black font-semibold py-2 px-4 rounded-lg shadow-md">
+          US EN
+        </button>
       </div>
     </>
   );
