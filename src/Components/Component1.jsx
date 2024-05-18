@@ -21,8 +21,8 @@ const Component1 = () => {
               <span className="font-[#545454] text-4xl">lawyer</span>
             </div>
             <div className="space-y-48"> </div>
-            <FaBars className="md:hidden w-6 h-6" />
-            <div className="space-x-14 md:flex max-md:hidden w-auto container mx-auto px-4 md:top-6 md:rounded-3xl lg:max-w-screen-lg">
+            <FaBars className="lg:hidden w-6 h-6" />
+            <div className="space-x-14 max-lg:hidden lg:flex w-auto mx-auto px-4 md:top-6 md:rounded-3xl ">
               <a
                 href="#"
                 className="relative group text-gray-600 dark:hover:text-gray-400"
@@ -60,7 +60,7 @@ const Component1 = () => {
               </a>
             </div>
 
-            <button className="max-md:hidden bg-yellow-300 text-black font-semibold py-3 px-6 rounded-2xl shadow-lg hover:bg-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 transition duration-300">
+            <button className="max-lg:hidden bg-yellow-300 text-black font-semibold py-3 px-6 rounded-2xl shadow-lg hover:bg-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 transition duration-300">
               Try for Free
             </button>
           </div>
@@ -69,7 +69,7 @@ const Component1 = () => {
         <div className="md:top-10 md:rounded-3xl px-5 py-5 mx-5 my-5">
           <div className="flex justify-center mt-10">
             <video
-              className="absolute inset-0 w-full h-full object-cover  opacity-5 m-20 rounded-3xl mix-blend-overlay max-md:hidden"
+              className="absolute inset-0 w-full h-full object-cover  opacity-5 m-20 rounded-3xl mix-blend-overlay max-lg:hidden"
               src="videoplayback.mp4" // Replace with your video path
               autoPlay
               muted
