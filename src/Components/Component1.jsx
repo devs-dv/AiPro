@@ -67,9 +67,9 @@ const Component1 = () => {
         </div>
 
         <div className="md:top-10 md:rounded-3xl px-5 py-5 mx-5 my-5">
-          <div className="flex justify-center mt-10">
+          <div className="flex justify-center mt-10 ">
             <video
-              className="absolute inset-0 w-full h-full object-cover  opacity-5 m-20 rounded-3xl mix-blend-overlay max-lg:hidden"
+              className="absolute inset-0  object-cover  opacity-5 m-20 max-w-[80vw] mx-auto rounded-3xl mix-blend-overlay max-lg:hidden"
               src="videoplayback.mp4" // Replace with your video path
               autoPlay
               muted
