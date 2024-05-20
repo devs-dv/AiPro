@@ -145,22 +145,22 @@ const Component1 = () => {
                 <div className="flex flex-col items-center mt-4">
                   <div className="flex -space-x-2">
                     <img
-                      className="inline-block h-10 w-10 rounded-full ring-2 ring-black hover:-translate-y-2 duration-300"
+                      className="inline-block h-10 w-10 rounded-full ring-2 ring-black hover:-translate-y-2 transition-transform duration-300"
                       src="https://framerusercontent.com/images/qu3p1CVTcA51hxcrHdp0kWGBv8.png"
                       alt="User 1"
                     />
                     <img
-                      className="inline-block h-10 w-10 rounded-full ring-2 ring-black hover:-translate-y-2 duration-300"
+                      className="inline-block h-10 w-10 rounded-full ring-2 ring-black hover:-translate-y-2 transition-transform duration-300"
                       src="https://framerusercontent.com/images/2mXcwauLEfvaNQkLjPpPYVVtos.png"
                       alt="User 2"
                     />
                     <img
-                      className="inline-block h-10 w-10 rounded-full ring-2 ring-black hover:-translate-y-2 duration-300"
+                      className="inline-block h-10 w-10 rounded-full ring-2 ring-black hover:-translate-y-2 transition-transform duration-300"
                       src="https://framerusercontent.com/images/TYo9warB47QIM9Qv6K0p163790.png"
                       alt="User 3"
                     />
                     <img
-                      className="inline-block h-10 w-10 rounded-full ring-2 ring-black hover:-translate-y-2 duration-300"
+                      className="inline-block h-10 w-10 rounded-full ring-2 ring-black hover:-translate-y-2 transition-transform duration-300"
                       src="https://framerusercontent.com/images/YLdNx7Ji8qI3mK9gRdUlSiNUbHc.png"
                       alt="User 4"
                     />
