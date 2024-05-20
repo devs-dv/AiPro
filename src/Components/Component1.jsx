@@ -1,7 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa6";
 
 const Component1 = () => {
+   const [scrollTop, setScrollTop] = useState(0);
+   const [isScrollingDown, setIsScrollingDown] = useState(false);
+
+   useEffect(() => {
+     const handleScroll = () => {
+       const currentScroll =
+         window.pageYOffset || document.documentElement.scrollTop;
+       setIsScrollingDown(currentScroll > scrollTop);
+       setScrollTop(currentScroll);
+     };
+
+     window.addEventListener("scroll", handleScroll);
+     return () => window.removeEventListener("scroll", handleScroll);
+   }, [scrollTop]);
   return (
     <>
       <div className="bg-[#EFEFEF]">
@@ -9,8 +23,10 @@ const Component1 = () => {
           {/* Background Video */}
 
           <div
-            className="sticky inset-x-0 top-0 z-30 w-full container mx-auto
-          md:rounded-3xl lg:max-w-screen-xl"
+            className={` bg-[#EFEFEF] sticky inset-x-0 top-0 z-30 w-full container mx-auto
+          md:rounded-3xl lg:max-w-screen-xl transition-transform duration-300 ${
+            isScrollingDown ? "-translate-y-full" : "translate-y-0"
+          }`}
           >
             <div className="flex flex-row items-center space-x-8 justify-between m-5">
               <div className="flex items-center ">
