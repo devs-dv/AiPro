@@ -33,7 +33,7 @@ const Component1 = () => {
                   src="https://framerusercontent.com/images/LvzWXeOKQdmc9M0ZkQoDU3Z76s.svg"
                   alt="AI Lawyer Logo"
                 />
-                <span className="font-[#545454] text-4xl">lawyer</span>
+                <span className="font-[#545454] text-4xl font-bold">lawyer</span>
               </div>
               <div className="space-y-48"> </div>
               <FaBars className="lg:hidden w-6 h-6" />
